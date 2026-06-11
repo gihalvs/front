@@ -1,20 +1,196 @@
-p {
-    font-family: verdana;
-    color:darkblue;
-    font-size: 20px;
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.paragrafo-final{
-    color: cornsilk;
+body {
+    background-color: #f7f9fa;
+    color: #333;
+    line-height: 1.6;
 }
 
-#autor {
-    font-style:italic;
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c7a7b;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #4a5568;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #2c7a7b;
+}
+
+.btn-consulta {
+    background-color: #2c7a7b;
+    color: white !important;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+.btn-consulta:hover {
+    background-color: #236162;
+}
+
+/* Banner Principal (Hero) */
+.hero {
+    background: linear-gradient(135deg, #e6fffa 0%, #b2f5ea 100%);
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 42px;
+    color: #234e52;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #4a5568;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+}
+
+.btn-principal {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: #2c7a7b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-principal:hover {
+    background-color: #236162;
+}
+
+/* Seção de Emergência */
+.secao-emergencia {
+    padding: 40px 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.alerta-box {
+    background-color: #fff5f5;
+    border: 2px solid #feb2b2;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    max-width: 700px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.alerta-box h2 {
+    color: #9b2c2c;
+    margin-bottom: 10px;
+}
+
+.alerta-box p {
+    color: #742a2a;
+    margin-bottom: 20px;
+}
+
+.btn-emergencia {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #e53e3e;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(229, 62, 62, 0.4);
+}
+
+.btn-emergencia:hover {
+    background-color: #c53030;
+    transform: scale(1.02);
+}
+
+/* Como Funciona */
+.como-funciona {
+    padding: 60px 10%;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.como-funciona h2 {
+    color: #2d3748;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.passos-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.passe {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+    background: #f7f9fa;
+    border-radius: 8px;
+    position: relative;
+}
+
+.numero {
+    width: 40px;
+    height: 40px;
+    background-color: #319795;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin: 0 auto 15px auto;
+}
+
+.passo h3 {
+    color: #2d3748;
+    margin-bottom: 10px;
+}
+
+.passo p {
+    color: #718096;
     font-size: 15px;
 }
 
-li{  
-    font-family: arial;
-    color: black;
-    font-size: 18px;
+/* Rodapé */
+footer {
+    background-color: #2d3748;
+    color: #a0aec0;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
 }
