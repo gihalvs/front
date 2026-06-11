@@ -1,196 +1,183 @@
-/* Configurações Gerais */
+/* Reset Geral */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 body {
-    background-color: #f7f9fa;
-    color: #333;
+    background-color: #f0f4f8; /* Azul gelo bem claro */
+    color: #1a2a3a; /* Azul escuro quase preto para os textos */
     line-height: 1.6;
 }
 
 /* Cabeçalho */
 header {
+    background-color: #1e2d3d; /* Azul escuro corporativo/frio */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 10%;
-    background-color: #ffffff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    padding: 20px 8%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header .logo {
     font-size: 24px;
     font-weight: bold;
-    color: #2c7a7b;
+    color: #e2e8f0;
 }
 
-header nav a {
+header nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+header nav ul li {
+    margin-left: 25px;
+}
+
+header nav ul li a {
     text-decoration: none;
-    color: #4a5568;
-    margin-left: 20px;
+    color: #94a3b8; /* Azul acinzentado */
+    font-weight: 500;
     transition: color 0.3s;
 }
 
-header nav a:hover {
-    color: #2c7a7b;
+header nav ul li a:hover {
+    color: #ffffff;
 }
 
-.btn-consulta {
-    background-color: #2c7a7b;
-    color: white !important;
-    padding: 8px 16px;
-    border-radius: 5px;
+header nav ul li a.btn-nav {
+    background-color: #475569; /* Azul ardósia médio */
+    color: white;
+    padding: 8px 18px;
+    border-radius: 4px;
 }
 
-.btn-consulta:hover {
-    background-color: #236162;
+header nav ul li a.btn-nav:hover {
+    background-color: #64748b;
 }
 
-/* Banner Principal (Hero) */
+/* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #e6fffa 0%, #b2f5ea 100%);
-    padding: 80px 10%;
+    background: linear-gradient(135deg, #2a4365 0%, #1a202c 100%); /* Gradiente azul frio profundo */
+    color: white;
     text-align: center;
+    padding: 80px 20px;
 }
 
 .hero h1 {
-    font-size: 42px;
-    color: #234e52;
-    margin-bottom: 20px;
+    font-size: 36px;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
 }
 
 .hero p {
     font-size: 18px;
-    color: #4a5568;
+    color: #cbd5e1;
     max-width: 600px;
-    margin: 0 auto 30px auto;
+    margin: 0 auto;
 }
 
-.btn-principal {
-    display: inline-block;
-    padding: 12px 28px;
-    background-color: #2c7a7b;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background 0.3s;
-}
-
-.btn-principal:hover {
-    background-color: #236162;
-}
-
-/* Seção de Emergência */
-.secao-emergencia {
-    padding: 40px 10%;
+/* Área do Formulário */
+.agendamento-section {
+    padding: 60px 8%;
     display: flex;
     justify-content: center;
 }
 
-.alerta-box {
-    background-color: #fff5f5;
-    border: 2px solid #feb2b2;
+.form-container {
+    background-color: #ffffff;
+    padding: 40px;
     border-radius: 8px;
-    padding: 30px;
-    text-align: center;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
     max-width: 700px;
     width: 100%;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border-top: 5px solid #2b6cb0; /* Detalhe em azul clínico */
 }
 
-.alerta-box h2 {
-    color: #9b2c2c;
+.form-container h2 {
+    color: #2d3748;
     margin-bottom: 10px;
+    font-size: 28px;
 }
 
-.alerta-box p {
-    color: #742a2a;
+.form-container .instrucao {
+    color: #64748b;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+/* Grupos do Formulário */
+.form-group {
     margin-bottom: 20px;
 }
 
-.btn-emergencia {
-    display: inline-block;
-    padding: 15px 30px;
-    background-color: #e53e3e;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 18px;
-    transition: background 0.3s, transform 0.2s;
-    box-shadow: 0 4px 10px rgba(229, 62, 62, 0.4);
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #4a5568;
+    font-size: 14px;
 }
 
-.btn-emergencia:hover {
-    background-color: #c53030;
-    transform: scale(1.02);
-}
-
-/* Como Funciona */
-.como-funciona {
-    padding: 60px 10%;
-    background-color: #ffffff;
-    text-align: center;
-}
-
-.como-funciona h2 {
-    color: #2d3748;
-    margin-bottom: 40px;
-    font-size: 32px;
-}
-
-.passos-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-.passe {
-    flex: 1;
-    min-width: 250px;
-    padding: 20px;
-    background: #f7f9fa;
-    border-radius: 8px;
-    position: relative;
-}
-
-.numero {
-    width: 40px;
-    height: 40px;
-    background-color: #319795;
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    margin: 0 auto 15px auto;
-}
-
-.passo h3 {
-    color: #2d3748;
-    margin-bottom: 10px;
-}
-
-.passo p {
-    color: #718096;
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    background-color: #f8fafc;
+    color: #334155;
     font-size: 15px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus, 
+.form-group select:focus, 
+.form-group textarea:focus {
+    border-color: #2b6cb0;
+    background-color: #ffffff;
+}
+
+/* Caixa de aviso sobre o diagnóstico */
+.aviso-diagnostico {
+    background-color: #f1f5f9;
+    border-left: 4px solid #64748b;
+    padding: 15px;
+    color: #475569;
+    font-size: 13px;
+    margin-bottom: 25px;
+    border-radius: 0 4px 4px 0;
+}
+
+/* Botão de Envio */
+.btn-submit {
+    width: 100%;
+    background-color: #2b6cb0; /* Azul frio forte */
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #2c5282;
 }
 
 /* Rodapé */
 footer {
-    background-color: #2d3748;
-    color: #a0aec0;
+    background-color: #0f172a;
+    color: #64748b;
     text-align: center;
-    padding: 20px;
-    font-size: 14px;
+    padding: 25px;
+    font-size: 13px;
 }
