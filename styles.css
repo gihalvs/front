@@ -1,183 +1,119 @@
-/* Reset Geral */
+/* Paleta de Cores Frias: Azuis, Cinzas e Brancos */
+:root {
+    --cor-fundo: #f4f7f6;
+    --cor-primaria: #2c3e50;
+    --cor-secundaria: #34495e;
+    --cor-destaque: #2980b9;
+    --cor-texto: #333333;
+    --cor-card: #ffffff;
+    --cor-borda: #dcdde1;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    background-color: #f0f4f8; /* Azul gelo bem claro */
-    color: #1a2a3a; /* Azul escuro quase preto para os textos */
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
     line-height: 1.6;
 }
 
-/* Cabeçalho */
 header {
-    background-color: #1e2d3d; /* Azul escuro corporativo/frio */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 8%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-header .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #e2e8f0;
-}
-
-header nav ul {
-    display: flex;
-    list-style: none;
-    align-items: center;
-}
-
-header nav ul li {
-    margin-left: 25px;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    color: #94a3b8; /* Azul acinzentado */
-    font-weight: 500;
-    transition: color 0.3s;
-}
-
-header nav ul li a:hover {
-    color: #ffffff;
-}
-
-header nav ul li a.btn-nav {
-    background-color: #475569; /* Azul ardósia médio */
+    background-color: var(--cor-primaria);
     color: white;
-    padding: 8px 18px;
-    border-radius: 4px;
-}
-
-header nav ul li a.btn-nav:hover {
-    background-color: #64748b;
-}
-
-/* Hero Section */
-.hero {
-    background: linear-gradient(135deg, #2a4365 0%, #1a202c 100%); /* Gradiente azul frio profundo */
-    color: white;
+    padding: 1.5rem;
     text-align: center;
-    padding: 80px 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-.hero h1 {
-    font-size: 36px;
-    margin-bottom: 15px;
-    letter-spacing: 0.5px;
+header h1 {
+    font-size: 2rem;
+    font-weight: 400;
 }
 
-.hero p {
-    font-size: 18px;
-    color: #cbd5e1;
-    max-width: 600px;
-    margin: 0 auto;
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
 }
 
-/* Área do Formulário */
-.agendamento-section {
-    padding: 60px 8%;
-    display: flex;
-    justify-content: center;
-}
-
-.form-container {
-    background-color: #ffffff;
-    padding: 40px;
+.container-triagem {
+    background-color: var(--cor-card);
+    padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
-    max-width: 700px;
-    width: 100%;
-    border-top: 5px solid #2b6cb0; /* Detalhe em azul clínico */
+    border: 1px solid var(--cor-borda);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
-.form-container h2 {
-    color: #2d3748;
-    margin-bottom: 10px;
-    font-size: 28px;
+h2 {
+    color: var(--cor-secundaria);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
 }
 
-.form-container .instrucao {
-    color: #64748b;
-    margin-bottom: 30px;
-    font-size: 15px;
+p {
+    margin-bottom: 1.5rem;
+    color: #555;
 }
 
-/* Grupos do Formulário */
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group label {
-    display: block;
-    font-weight: 600;
-    margin-bottom: 8px;
-    color: #4a5568;
-    font-size: 14px;
-}
-
-.form-group input, 
-.form-group select, 
-.form-group textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #cbd5e1;
+.aviso {
+    background-color: #ebf5fb;
+    border-left: 4px solid var(--cor-destaque);
+    padding: 1rem;
+    margin-bottom: 1.5rem;
     border-radius: 4px;
-    background-color: #f8fafc;
-    color: #334155;
-    font-size: 15px;
-    outline: none;
-    transition: border-color 0.2s;
+    font-size: 0.95rem;
 }
 
-.form-group input:focus, 
-.form-group select:focus, 
-.form-group textarea:focus {
-    border-color: #2b6cb0;
-    background-color: #ffffff;
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--cor-secundaria);
 }
 
-/* Caixa de aviso sobre o diagnóstico */
-.aviso-diagnostico {
-    background-color: #f1f5f9;
-    border-left: 4px solid #64748b;
-    padding: 15px;
-    color: #475569;
-    font-size: 13px;
-    margin-bottom: 25px;
-    border-radius: 0 4px 4px 0;
-}
-
-/* Botão de Envio */
-.btn-submit {
+textarea {
     width: 100%;
-    background-color: #2b6cb0; /* Azul frio forte */
+    height: 150px;
+    padding: 0.75rem;
+    border: 1px solid var(--cor-borda);
+    border-radius: 4px;
+    resize: vertical;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+textarea:focus {
+    border-color: var(--cor-destaque);
+}
+
+button {
+    background-color: var(--cor-destaque);
     color: white;
     border: none;
-    padding: 15px;
-    font-size: 16px;
-    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
     border-radius: 4px;
     cursor: pointer;
-    transition: background 0.3s;
+    width: 100%;
+    transition: background-color 0.3s;
 }
 
-.btn-submit:hover {
-    background-color: #2c5282;
+button:hover {
+    background-color: #1f6696;
 }
 
-/* Rodapé */
 footer {
-    background-color: #0f172a;
-    color: #64748b;
     text-align: center;
-    padding: 25px;
-    font-size: 13px;
+    padding: 2rem;
+    margin-top: 3rem;
+    color: #7f8c8d;
+    font-size: 0.85rem;
+    border-top: 1px solid var(--cor-borda);
 }

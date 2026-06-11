@@ -3,71 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Espaço Mente | Agendamento de Consultas</title>
+    <title>Espaço Equilíbrio - Psicoterapia</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <div class="logo">Espaço Mente</div>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#como-funciona">Atendimento</a></li>
-                <li><a href="#agendamento" class="btn-nav">Agendar Sessão</a></li>
-            </ul>
-        </nav>
+        <h1>Espaço Equilíbrio</h1>
     </header>
 
-    <section id="inicio" class="hero">
-        <div class="hero-content">
-            <h1>Cuidado profissional para a sua saúde mental</h1>
-            <p>Escolha o atendimento presencial ou online e dê o primeiro passo para o seu bem-estar.</p>
-        </div>
-    </section>
-
-    <section id="agendamento" class="agendamento-section">
-        <div class="form-container">
-            <h2>Solicitar Agendamento</h2>
-            <p class="instrucao">Preencha os dados abaixo. O relato dos seus sintomas será enviado diretamente ao psicólogo para guiar a sua primeira consulta.</p>
+    <main>
+        <div class="container-triagem">
+            <h2>Pré-Consulta e Acolhimento</h2>
             
-            <form action="#" method="POST">
-                <div class="form-group">
-                    <label for="nome">Nome Completo:</label>
-                    <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
-                </div>
+            <div class="aviso">
+                <strong>Aviso Importante:</strong> Este espaço serve apenas para organizar suas ideias antes do atendimento. Algoritmos não substituem psicólogos. O diagnóstico em saúde mental só pode ser realizado por profissionais qualificados.
+            </div>
 
-                <div class="form-group">
-                    <label for="email">E-mail de Contato:</label>
-                    <input type="email" id="email" name="email" required placeholder="seuemail@exemplo.com">
-                </div>
+            <p>Use o espaço abaixo para descrever como você tem se sentido nos últimos dias, seus principais desafios ou o motivo de buscar ajuda profissional. Suas anotações serão enviadas diretamente para a nossa equipe agendar sua sessão.</p>
 
-                <div class="form-group">
-                    <label for="modalidade">Modalidade de Atendimento:</label>
-                    <select id="modalidade" name="modalidade" required>
-                        <option value="" disabled selected>Selecione uma opção</option>
-                        <option value="online">Online (Videochamada)</option>
-                        <option value="presencial">Presencial (No Consultório)</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="sintomas">Como você está se sentindo? (Relato para o Psicólogo):</label>
-                    <textarea id="sintomas" name="sintomas" rows="6" required placeholder="Descreva brevemente o que te levou a buscar ajuda (ex: ansiedade, estresse, desânimo, etc.). Esse texto será avaliado pelo profissional na sua sessão."></textarea>
-                </div>
-
-                <div class="aviso-diagnostico">
-                    <strong>Nota importante:</strong> Diagnósticos psicológicos não podem ser gerados de forma automatizada por sites. Seu relato será analisado de forma estritamente confidencial pelo psicólogo durante a consulta.
-                </div>
-
-                <button type="submit" class="btn-submit">Enviar Solicitação de Agendamento</button>
-            </form>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 Espaço Mente - Consultas de Psicologia. Todos os direitos reservados de acordo com as normas do CFP.</p>
-    </footer>
-
-</body>
-</html>
+            <form action="#"
